@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Time Loop Escape - 5 Levels</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="game-container">
+    <h1>⏳ Time Loop Escape</h1>
+    <h3 id="level">Level 1</h3>
+    <p id="timer">Time Left: 60</p>
+
+    <div class="room">
+        <p id="story">You wake up in a locked room.</p>
+    </div>
+
+    <div class="actions">
+        <!-- Core objects -->
+        <button onclick="inspectDesk()">Inspect Desk</button>
+        <button onclick="inspectClock()">Inspect Clock</button>
+        <button onclick="inspectBox()">Inspect Box</button>
+        <button onclick="inspectSpecial()">Inspect Special</button>
+        <button onclick="inspectDoor()">Inspect Door</button>
+    </div>
+
+    <p id="memory">🧠 Memory: None</p>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
