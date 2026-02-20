@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Time Loop Escape - 5 Levels</title>
+
+    <!-- SOLANA LIBRARY (REQUIRED) -->
+    <script src="https://unpkg.com/@solana/web3.js@latest/lib/index.iife.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="game-container">
+    <h1>⏳ Time Loop Escape</h1>
+
+    <!-- WALLET UI -->
+    <button id="connectWallet">Connect Phantom</button>
+    <p id="walletAddress"></p>
+
+    <h3 id="level">Level 1</h3>
+    <p id="timer">Time Left: 60</p>
+    <p id="actions"></p>
+
+    <div class="room">
+        <p id="story">You wake up in a locked room.</p>
+    </div>
+
+    <div class="actions">
+        <button onclick="inspectDesk()">Inspect Desk</button>
+        <button onclick="inspectClock()">Inspect Clock</button>
+        <button onclick="inspectBox()">Inspect Box</button>
+        <button onclick="inspectSpecial()">Inspect Special</button>
+        <button onclick="inspectDoor()">Inspect Door</button>
+    </div>
+
+    <p id="memory">🧠 Memory: None</p>
+
+    <h3>🏆 On-Chain Leaderboard</h3>
+    <div id="leaderboard">Not connected</div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
